@@ -70,7 +70,7 @@ function App() {
             <img src={DLLogo} style={{width: 300}}/>
         </div>
         <img src={ViaRestLogo} className={"logo"}/>
-        <div style={{width: 340, height: 1, backgroundColor: "#C4C4C4", margin: 32}} />
+        <div style={{width: "100%", maxWidth: 340, height: 1, backgroundColor: "#C4C4C4", margin: 32}} />
         <div style={{paddingBottom: 30}}>©ViaRest 2022</div>
     </div>
   );
