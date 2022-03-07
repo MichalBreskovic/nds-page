@@ -14,6 +14,29 @@ body {
   padding: 0 30px;
 }
 
+
+.conditions {
+  text-align: justify;
+  margin: auto;
+  max-width: 1500px;
+  padding: 0 30px;
+}
+
+.button {
+  font-family: Poppins, serif;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  width: 300px;
+  height: 48px;
+  border-radius: 20px;
+  float: right;
+  background-color: #58595B;
+  font-size: 23px;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
 h1 {
   font-family: Poppins, serif;
   font-style: normal;
@@ -36,6 +59,14 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
+  line-height: 36px;
+}
+
+li {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
   line-height: 36px;
 }
 
@@ -65,7 +96,6 @@ p {
 }
 
 .top-container {
-  margin-top: 0px;
   position: relative;
   margin-bottom: 50%;
   width: 100%;
@@ -172,7 +202,6 @@ p {
   }
 
   .bottom-icons-container {
-    width: 0%;
     height: 50%;
     display: flex;
     flex-direction: column;
