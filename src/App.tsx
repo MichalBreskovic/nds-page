@@ -7,6 +7,8 @@ import ViaRestLogo from './assets/viarest-logo.png';
 import ViaRestLogoSide from './assets/viarest-logo-side.png';
 
 import {ReactComponent as Icons} from './assets/icons.svg';
+import {ReactComponent as AppStoreButton} from './assets/app_store_button.svg';
+import {ReactComponent as GooglePlayButton} from './assets/google_play_button.svg';
 
 import flying1 from './assets/flying-1.png'
 import flying2 from './assets/flying-2.png'
@@ -33,17 +35,9 @@ function App() {
             <img src={minSrLogo} className={"min-sr-logo"}/>
             <h1>Rýchla pomoc na diaľnici</h1>
             <p>Aplikácia, ktorá vás informuje o službách na diaľničných odpočívadlách a ponúka užívateľom privolať pomoc na diaľnici v prípade poruchy vozidla.</p>
-            <div>
-                <MobileStoreButton
-                    store="ios"
-                    url={"https://apps.apple.com/sk/app/viarest/id1588391482?l=sk"}
-                    linkProps={{ title: 'iOS Store Button' }}
-                    />
-                <MobileStoreButton
-                    store="android"
-                    url={""}
-                    linkProps={{ title: 'Android Store Button' }}
-                />
+            <div className={"store-button-container"}>
+                <a><AppStoreButton className={"store-button"} /></a>
+                <a><GooglePlayButton className={"store-button"}/></a>
             </div>
         </div>
 
@@ -69,15 +63,15 @@ function App() {
                 <p >Funkciu privolať pomoc na diaľnici máte k dispozícii, ak aplikácia rozpozná vašu polohu na diaľnici. Ide o priamy kontakt na dispečing Národnej Diaľničnej Spoločnosti. </p>
             </div>
         </div>
-        <p>Aplikácia je iniciatívou Ministerstva dopravy a výstavby SR, ktorá má za účelom informovať o službách na diaľničných odpočívadlách.</p>
-        <div style={{width: 300, height: 1, backgroundColor: "#C4C4C4", margin: 24}} />
-        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <p style={{maxWidth: 1000, padding: 30}}>Aplikácia je iniciatívou Ministerstva dopravy a výstavby SR, ktorá má za účelom informovať o službách na diaľničných odpočívadlách.</p>
+        <div style={{width: "100%", maxWidth: 463, height: 1, backgroundColor: "#C4C4C4", margin: 24}} />
+        <div className={"bottom-icons-container"}>
             <img src={minSrLogo} style={{width: 300}}/>
             <img src={DLLogo} style={{width: 300}}/>
         </div>
-        <img src={ViaRestLogo} style={{width: 300}}/>
-        <div style={{width: 300, height: 1, backgroundColor: "#C4C4C4", margin: 32}} />
-        <div>©ViaRest 2022</div>
+        <img src={ViaRestLogo} className={"logo"}/>
+        <div style={{width: 340, height: 1, backgroundColor: "#C4C4C4", margin: 32}} />
+        <div style={{paddingBottom: 30}}>©ViaRest 2022</div>
     </div>
   );
 }

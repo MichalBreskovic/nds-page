@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  background-color: #eaeaea;
+}
 
 .App {
   text-align: center;
@@ -54,18 +57,31 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  top: 80px;
+  top: 0;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
 .top-container {
-  margin-top: -60px;
+  margin-top: 0px;
   position: relative;
   margin-bottom: 50%;
   width: 100%;
+}
 
+.store-button-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.store-button {
+  height: 5rem;
+  max-height: 100px;
 }
 
 .min-sr-logo {
@@ -79,6 +95,11 @@ p {
 
 .item-container {
   display: flex;
+  align-items: center;
+}
+
+.min-sr-logo {
+  width: 429px
 }
 
 .min-sr-logo-bottom {
@@ -91,11 +112,101 @@ p {
 
 .item-text {
   text-align: left;
-  margin-top: 15%;
+  padding-bottom: 80px;
+}
+
+.bottom-icons-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 1000px) {
   .item-container {
     display: block;
   }
+
+  .store-button {
+    width: 200px;
+  }
+
+  .flying {
+    width: 80%;
+  }
+
+  .icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .mockups {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .top-container {
+    margin-bottom: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .store-button-container {
+    flex-direction: column;
+  }
+
+  .bottom-icons-container {
+    width: 0%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .bottom-icons-container img {
+    margin-top: 30px;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .via-logo-top {
+    width: 200px;
+  }
+
+  .min-sr-logo {
+    width: 80%
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+
 }
