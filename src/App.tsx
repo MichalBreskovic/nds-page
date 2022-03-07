@@ -36,8 +36,8 @@ function App() {
             <h1>Rýchla pomoc na diaľnici</h1>
             <p>Aplikácia, ktorá vás informuje o službách na diaľničných odpočívadlách a ponúka užívateľom privolať pomoc na diaľnici v prípade poruchy vozidla.</p>
             <div className={"store-button-container"}>
-                <a><AppStoreButton className={"store-button"} /></a>
-                <a><GooglePlayButton className={"store-button"}/></a>
+                <a href={"https://apps.apple.com/sk/app/viarest/id1588391482?l=sk"}><AppStoreButton className={"store-button"} /></a>
+                <a href={""}><GooglePlayButton className={"store-button"}/></a>
             </div>
         </div>
 
