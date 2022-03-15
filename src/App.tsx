@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Main from "./components/main";
 import TermsOfConditions from "./components/terms-of-conditions";
+import PrivacyPolicy from "./components/privacy-policy";
+import Copyright from "./components/copyright";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
           <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/terms-and-conditions" element={<TermsOfConditions />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/copyright" element={<Copyright />} />
           </Routes>
       </BrowserRouter>
   );
