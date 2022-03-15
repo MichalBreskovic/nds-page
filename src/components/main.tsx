@@ -37,7 +37,7 @@ function Main() {
                 <p>Aplikácia, ktorá vás informuje o službách na diaľničných odpočívadlách a ponúka užívateľom privolať pomoc na diaľnici v prípade poruchy vozidla.</p>
                 <div className={"store-button-container"}>
                     <a href={"https://apps.apple.com/sk/app/viarest/id1588391482?l=sk"}><AppStoreButton className={"store-button"} /></a>
-                    <a href={""}><GooglePlayButton className={"store-button"}/></a>
+                    <a href={"https://play.google.com/store/apps/details?id=com.bluelemons.dldoprava"}><GooglePlayButton className={"store-button"}/></a>
                 </div>
             </div>
 
