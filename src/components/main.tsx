@@ -42,36 +42,38 @@ function Main() {
             </div>
 
             <div className={"item-container"}>
-                <img className={"flying"} alt="mobile image" src={flying1}/>
+                {isSmall && <img className={"flying"} alt="mobile image" src={flying1}/>}
                 <div className={"item-text"}>
                     <h2>Prehľad odpočívadiel</h2>
                     <p>Aplikácia má detailny prehľad odpočívadiel so službami, ktoré sa na ňom nachádzajú. Tiež si viete pozrieť kamerovy náhľad odpočívalda a navigovať sa priamo naň.</p>
                 </div>
+                {!isSmall && <img className={"flying"} alt="mobile image" src={flying1}/>}
             </div>
             <div className={"item-container"}>
-                {!isSmall && <img className={"flying"} alt="mobile image" src={flying2}/>}
                 <div className={"item-text"}>
                     <h2>Filtrovanie služieb</h2>
                     <p>Podrobný filter vám ponúka filtrovanie konkrétnych služieb, ktoré preferujete na odpočívadlách. Následne sa na mape zobrazia len tie, ktoré sú podľa vašich preferencií.</p>
                 </div>
-                {isSmall && <img className={"flying"} alt="mobile image" src={flying2}/>}
+                <img className={"flying"} alt="mobile image" src={flying2}/>
             </div>
             <div className={"item-container"}>
-                <img className={"flying"} alt="mobile image" src={flying3}/>
+                {isSmall && <img className={"flying"} alt="mobile image" src={flying3}/>}
                 <div className={"item-text"}>
                     <h2>Privolanie diaľničnej patroly</h2>
                     <p >Funkciu privolať pomoc na diaľnici máte k dispozícii, ak aplikácia rozpozná vašu polohu na diaľnici. Ide o priamy kontakt na dispečing Národnej Diaľničnej Spoločnosti. </p>
                 </div>
+                {!isSmall && <img className={"flying"} alt="mobile image" src={flying3}/>}
             </div>
-            <p style={{maxWidth: 1000, padding: 30}}>Aplikácia je iniciatívou Ministerstva dopravy a výstavby SR, ktorá má za účelom informovať o službách na diaľničných odpočívadlách.</p>
-            <div style={{width: "100%", maxWidth: 463, height: 1, backgroundColor: "#C4C4C4", margin: 24}} />
+            <p className={"bottom-text"}>Aplikácia je iniciatívou Ministerstva dopravy a výstavby SR, ktorá má za účelom informovať o službách na diaľničných odpočívadlách.</p>
+            <div className={"bottom-top-line"} />
             <div className={"bottom-icons-container"}>
-                <img alt={"Ministry of Transport logo"} src={minSrLogo} style={{width: 300}}/>
-                <img alt={"digital league logo"} src={DLLogo} style={{width: 300}}/>
+                <img alt={"Ministry of Transport logo"} src={minSrLogo} />
+                <img alt={"digital league logo"} src={DLLogo} />
             </div>
             <img src={ViaRestLogo} className={"logo"}/>
-            <div style={{width: "100%", maxWidth: 340, height: 1, backgroundColor: "#C4C4C4", margin: 32}} />
-            <div style={{paddingBottom: 30}}>©ViaRest 2022 | <Link to={'/terms-and-conditions'}>Terms and Conditions</Link> | <Link to={'/privacy-policy'}>Privacy Policy</Link> | <Link to={'/copyright'}>Copyright</Link></div>
+            <div className={"bottom-line"} />
+            <div style={{paddingBottom: 10}}>©ViaRest 2022</div>
+            <div style={{paddingBottom: 30}}><Link to={'/terms-and-conditions'}>Terms and Conditions</Link> | <Link to={'/privacy-policy'}>Privacy Policy</Link> | <Link to={'/copyright'}>Copyright</Link></div>
 
         </div>
     );

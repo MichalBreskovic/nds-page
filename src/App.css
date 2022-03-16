@@ -128,10 +128,6 @@ li {
   align-items: center;
 }
 
-.min-sr-logo {
-  width: 429px
-}
-
 .min-sr-logo-bottom {
     width: 100px
 }
@@ -152,9 +148,34 @@ li {
   align-items: center;
 }
 
+.bottom-icons-container img {
+  width: 300px;
+}
+
 .logo {
   width: 200px;
   margin-top: 60px;
+}
+
+.bottom-text {
+  max-width: 1000px;
+  padding: 30px;
+}
+
+.bottom-line {
+  width: 100%;
+  max-width: 340px;
+  height: 1px;
+  background-color: #C4C4C4;
+  margin: 32px;
+}
+
+.bottom-top-line {
+  width: 100%;
+  max-width: 463px;
+  height: 1px;
+  background-color: #C4C4C4;
+  margin: 24px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -197,8 +218,19 @@ li {
 }
 
 @media only screen and (max-width: 700px) {
+
+  .store-button {
+    height: 70%;
+    width: 90%;
+  }
+
   .store-button-container {
-    flex-direction: column;
+    height: 50%;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    margin-top: 30px;
   }
 
   .bottom-icons-container {
@@ -211,6 +243,10 @@ li {
 
   .bottom-icons-container img {
     margin-top: 30px;
+  }
+
+  .item-text {
+    padding-bottom: 20px;
   }
 
   .logo {
@@ -237,5 +273,75 @@ li {
     font-size: 20px;
   }
 
+  .logo {
+    width: 15%;
+  }
+
+  .bottom-icons-container img {
+    margin-top: 8%;
+    width: 80%;
+  }
+
+  .bottom-top-line {
+    margin: 3%;
+    width: 60%;
+  }
+
+  .bottom-line {
+    margin: 3%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .via-logo-top {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+
+  .min-sr-logo {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .mockups {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .App {
+    padding: 0 17px;
+  }
+
+  .bottom-text {
+    padding: 0;
+  }
 
 }
